@@ -1,0 +1,23 @@
+sentence,start,end,label
+Sundar Pichai is the CEO of Google,0,13,PER
+Sundar Pichai is the CEO of Google,31,37,ORG
+Elon Musk founded SpaceX,0,9,PER
+Elon Musk founded SpaceX,18,24,ORG
+Microsoft was established in 1975,0,9,ORG
+Microsoft was established in 1975,27,31,DATE
+Ratan Tata donated 50 million dollars,0,10,PER
+Ratan Tata donated 50 million dollars,19,37,MONEY
+Narendra Modi visited Paris in 2023,0,14,PER
+Narendra Modi visited Paris in 2023,23,28,LOC
+Narendra Modi visited Paris in 2023,32,36,DATE
+Apple is located in California,0,5,ORG
+Apple is located in California,21,31,LOC
+Sachin Tendulkar lives in Mumbai,0,17,PER
+Sachin Tendulkar lives in Mumbai,28,34,LOC
+Jeff Bezos founded Amazon,0,10,PER
+Jeff Bezos founded Amazon,19,25,ORG
+The conference was held on 10 July 2021,29,42,DATE
+Google invested 30 billion dollars,0,6,ORG
+Google invested 30 billion dollars,16,33,MONEY
+The headquarters of IBM is in New York,20,23,ORG
+The headquarters of IBM is in New York,31,39,LOC
