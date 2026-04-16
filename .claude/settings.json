@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/krishna/Desktop/NLP/.venv/bin/python3)"
+    ]
+  }
+}
