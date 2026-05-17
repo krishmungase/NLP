@@ -6,6 +6,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, WordNetLemmatizer
+from collections import Counter
 
 # Download required datasets
 nltk.download('punkt')
@@ -48,3 +49,22 @@ lemmatized_words = [lm.lemmatize(word) for word in filtered_words]
 print("\n=== 4. Lemmatization ===")
 for word in lemmatized_words:
     print("•", word)
+
+# Morphology Analysis
+print("\n=== 5. Morphology Analysis ===")
+for word in filtered_words:
+    print(f"Original Word: {word}")
+    print(f"Stemmed Word : {ps.stem(word)}")
+    print(f"Lemma Word   : {lm.lemmatize(word)}")
+    print("---------------------------")
+
+# Frequency Analysis
+print("\n=== 6. Frequency Analysis ===")
+
+# Convert words to lowercase and remove punctuation
+clean_words = [word.lower() for word in filtered_words if word.isalpha()]
+
+freq = Counter(clean_words)
+
+for word, count in freq.items():
+    print(f"{word} : {count}")

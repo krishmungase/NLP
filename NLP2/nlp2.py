@@ -19,8 +19,18 @@ print(text)
 # Process text with spaCy
 doc = nlp(text)
 
-# Print tokens and their POS tags
-print("\n=== Tokens and POS Tags ===")
+# ---------------------------------------------------
+# 1. POS TAGGING
+# ---------------------------------------------------
+
+print("\n=== 1. Tokens and POS Tags ===")
 
 for token in doc:
     print(f"{token.text:15} ──► {token.pos_}")
+
+
+print("\nNoun Chunks:\n")
+
+# Print noun phrases
+for chunk in doc.noun_chunks:
+    print(chunk.text)
